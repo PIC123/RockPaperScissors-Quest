@@ -1,0 +1,310 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4765353545580991184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4765353545580991190}
+  - component: {fileID: 4765353545580991191}
+  m_Layer: 0
+  m_Name: Gesture Detection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4765353545580991190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765353545580991184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4765353545580991191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765353545580991184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203e71cdd21236a40a170e11f0b74557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.0253
+  skeleton: {fileID: 0}
+  gestures:
+  - name: Rock
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069309, y: -0.011554099, z: -0.010496539}
+    - {x: -0.036375083, y: -0.020069072, z: -0.027207855}
+    - {x: -0.05657114, y: -0.040914737, z: -0.041859236}
+    - {x: -0.08056266, y: -0.058134034, z: -0.025431361}
+    - {x: -0.09599627, y: -0.007316461, z: -0.023550708}
+    - {x: -0.10691172, y: -0.04324166, z: -0.0181922}
+    - {x: -0.08316232, y: -0.043305714, z: -0.023352744}
+    - {x: -0.09564659, y: -0.0025431595, z: -0.0017258843}
+    - {x: -0.10634212, y: -0.044052713, z: 0.0005744203}
+    - {x: -0.0799138, y: -0.048035603, z: -0.0061084446}
+    - {x: -0.088693805, y: -0.0065293065, z: 0.017465217}
+    - {x: -0.09341702, y: -0.045184635, z: 0.015426886}
+    - {x: -0.06882644, y: -0.04820845, z: 0.0058193435}
+    - {x: -0.03407359, y: -0.00941983, z: 0.022998538}
+    - {x: -0.07789588, y: -0.0136911785, z: 0.035054035}
+    - {x: -0.07887796, y: -0.043290883, z: 0.026890878}
+    - {x: -0.060983416, y: -0.045171652, z: 0.017467551}
+    - {x: -0.08491589, y: -0.05823753, z: -0.0011981189}
+    - {x: -0.076345615, y: -0.022220971, z: -0.026550377}
+    - {x: -0.06860773, y: -0.026635647, z: -0.012341489}
+    - {x: -0.05825481, y: -0.026667083, z: 0.0015037982}
+    - {x: -0.048138242, y: -0.028476795, z: 0.011269649}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: setGesture
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: setGestureLabel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Rock
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Paper
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069297, y: -0.0115541015, z: -0.010496528}
+    - {x: -0.03213908, y: -0.011392554, z: -0.0322208}
+    - {x: -0.051750075, y: -0.017600205, z: -0.05739945}
+    - {x: -0.07633876, y: -0.022263229, z: -0.080106884}
+    - {x: -0.0959963, y: -0.00731642, z: -0.023550684}
+    - {x: -0.13333201, y: -0.005333017, z: -0.029921222}
+    - {x: -0.15732035, y: -0.004214846, z: -0.033660147}
+    - {x: -0.0956466, y: -0.0025431595, z: -0.0017259115}
+    - {x: -0.138565, y: -0.0018004422, z: -0.0021612258}
+    - {x: -0.16611263, y: -0.0014753774, z: -0.0022066063}
+    - {x: -0.08869377, y: -0.0065293303, z: 0.017465238}
+    - {x: -0.12680711, y: -0.0008985244, z: 0.02349587}
+    - {x: -0.15280579, y: 0.002622351, z: 0.027716665}
+    - {x: -0.034073588, y: -0.009419823, z: 0.022998579}
+    - {x: -0.07789582, y: -0.013691218, z: 0.035054073}
+    - {x: -0.10447632, y: -0.004660681, z: 0.047531087}
+    - {x: -0.12190904, y: -0.0005099879, z: 0.057092506}
+    - {x: -0.08968838, y: -0.02505768, z: -0.10060535}
+    - {x: -0.17917475, y: 0.00030281063, z: -0.03545867}
+    - {x: -0.1905988, y: 0.003457097, z: -0.0013506962}
+    - {x: -0.176187, y: 0.008776207, z: 0.030857269}
+    - {x: -0.14151338, y: 0.0049479967, z: 0.06533935}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: setGesture
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: setGestureLabel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Paper
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Scissors
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069307, y: -0.011554096, z: -0.010496532}
+    - {x: -0.03831265, y: -0.024721453, z: -0.021053568}
+    - {x: -0.058119647, y: -0.05022336, z: -0.024851656}
+    - {x: -0.08113248, y: -0.06771514, z: -0.007346824}
+    - {x: -0.09599623, y: -0.0073164473, z: -0.023550682}
+    - {x: -0.13167733, y: -0.009880682, z: -0.036150847}
+    - {x: -0.15464205, y: -0.011714301, z: -0.043892182}
+    - {x: -0.095646635, y: -0.002543139, z: -0.0017259389}
+    - {x: -0.13731377, y: -0.012864484, z: -0.0019416608}
+    - {x: -0.16407433, y: -0.019409548, z: -0.0018367332}
+    - {x: -0.08869378, y: -0.00652931, z: 0.017465243}
+    - {x: -0.106739946, y: -0.041093558, z: 0.016877782}
+    - {x: -0.08281123, y: -0.05038952, z: 0.010011421}
+    - {x: -0.034073573, y: -0.009419828, z: 0.022998577}
+    - {x: -0.077895835, y: -0.013691193, z: 0.03505409}
+    - {x: -0.08326119, y: -0.043363724, z: 0.029180622}
+    - {x: -0.068101145, y: -0.05103752, z: 0.018052386}
+    - {x: -0.09063777, y: -0.07058283, z: 0.015183936}
+    - {x: -0.1761908, y: -0.0092063155, z: -0.049425483}
+    - {x: -0.18904215, y: -0.019676164, z: -0.00075287005}
+    - {x: -0.06270482, y: -0.037571773, z: 0.0049270503}
+    - {x: -0.050902195, y: -0.047527555, z: 0.0048612384}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: setGesture
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: setGestureLabel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Scissors
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Spock
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069292, y: -0.0115541145, z: -0.010496525}
+    - {x: -0.03176614, y: -0.010673847, z: -0.032406766}
+    - {x: -0.05205899, y: -0.013952638, z: -0.05759683}
+    - {x: -0.07862825, y: -0.017542712, z: -0.078167684}
+    - {x: -0.09599624, y: -0.0073164483, z: -0.023550684}
+    - {x: -0.13361542, y: -0.0042828284, z: -0.027302848}
+    - {x: -0.15776563, y: -0.0024932579, z: -0.029360218}
+    - {x: -0.095646605, y: -0.002543163, z: -0.0017259076}
+    - {x: -0.13822241, y: -0.00084091333, z: -0.0069347727}
+    - {x: -0.16557194, y: 0.0003307235, z: -0.010035058}
+    - {x: -0.088693775, y: -0.00652932, z: 0.017465236}
+    - {x: -0.121631004, y: -0.001242153, z: 0.037661422}
+    - {x: -0.14405006, y: 0.0020475537, z: 0.051543325}
+    - {x: -0.034073528, y: -0.009419861, z: 0.022998571}
+    - {x: -0.07789586, y: -0.013691168, z: 0.03505408}
+    - {x: -0.104024105, y: -0.0075087263, z: 0.049981836}
+    - {x: -0.12032378, y: -0.0033617504, z: 0.0613693}
+    - {x: -0.09248307, y: -0.01852642, z: -0.09849714}
+    - {x: -0.17952076, y: 0.0027888706, z: -0.029626409}
+    - {x: -0.19031551, y: 0.003043034, z: -0.012278544}
+    - {x: -0.16453269, y: 0.007978613, z: 0.06336279}
+    - {x: -0.13825446, y: 0.0037967605, z: 0.07182752}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: setGestureLabel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Spock
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Lizard
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069264, y: -0.011554104, z: -0.010496532}
+    - {x: -0.0385227, y: -0.025319355, z: -0.019858109}
+    - {x: -0.0594335, y: -0.05009453, z: -0.022311945}
+    - {x: -0.084779516, y: -0.069925085, z: -0.012001724}
+    - {x: -0.09599624, y: -0.0073164618, z: -0.023550682}
+    - {x: -0.11109204, y: -0.041956615, z: -0.020286331}
+    - {x: -0.109844506, y: -0.06615415, z: -0.018391412}
+    - {x: -0.09564665, y: -0.0025431565, z: -0.0017258998}
+    - {x: -0.11508384, y: -0.04062177, z: 0.0021392922}
+    - {x: -0.11120137, y: -0.067874536, z: 0.0010478377}
+    - {x: -0.08869382, y: -0.0065293065, z: 0.017465254}
+    - {x: -0.10639807, y: -0.041257802, z: 0.018555246}
+    - {x: -0.10555465, y: -0.06759505, z: 0.015122568}
+    - {x: -0.034073606, y: -0.009419834, z: 0.022998583}
+    - {x: -0.0778959, y: -0.013691168, z: 0.03505407}
+    - {x: -0.09345928, y: -0.040116046, z: 0.03325103}
+    - {x: -0.090454504, y: -0.059166756, z: 0.026879674}
+    - {x: -0.10114202, y: -0.088193335, z: -0.0098226685}
+    - {x: -0.10941304, y: -0.08829796, z: -0.015116595}
+    - {x: -0.10566945, y: -0.092212684, z: -0.00025243126}
+    - {x: -0.10086079, y: -0.090861306, z: 0.009549328}
+    - {x: -0.09021719, y: -0.07960093, z: 0.018847294}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: Spawn
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: setGestureLabel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Lizard
+            m_BoolArgument: 0
+          m_CallState: 2
+  debugMode: 1
+  previousGesture:
+    name: 
+    fingerDatas: []
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls: []
